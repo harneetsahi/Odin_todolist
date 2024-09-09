@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <aside class="sidebar">
+        <section class="navigation-links">
+          <div class="add">Add task</div>
+          <div class="search">Search</div>
+        </section>
+        <section class="project-links"></section>
+      </aside>
+      <div class="container">
+        <h2>Today</h2>
+        <section class="list-container">
+          <h5>My Projects</h5>
+          <field class="task-list">
+            <div>
+              <div class="list-item-container">
+                <input type="radio" name="item" id="" />
+                <label class="list-item">yoga</label>
+              </div>
+              <span class="due-time">Date, 10:00 AM</span>
+            </div>
+            <div>
+              <div class="list-item-container">
+                <input type="radio" name="item" id="" />
+                <label class="list-item">yoga</label>
+              </div>
 
+              <span class="due-time">Date, 10:00 AM</span>
+            </div>
+          </field>
+        </section>
+
+        <section class="list-container">
+          <h5>Add via JS</h5>
+          <field class="task-list">
+            <div>
+              <div class="list-item-container">
+                <input type="radio" name="item" id="" />
+                <label class="list-item">add via js</label>
+              </div>
+              <span class="due-time">Date, 10:00 AM</span>
+            </div>
+            <div>
+              <div class="list-item-container">
+                <input type="radio" name="item" id="" />
+                <label class="list-item">add via js</label>
+              </div>
+
+              <span class="due-time">Date, 10:00 AM</span>
+            </div>
+          </field>
+        </section>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
