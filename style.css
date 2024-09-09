@@ -1,1 +1,93 @@
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  padding: 2rem 0 0 0;
+  min-width: 200px;
+  height: 100vh;
+  background-color: rgb(252, 249, 247);
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  color: rgb(68, 68, 68);
+}
+
+.navigation-links div {
+  padding: 0.4rem 1rem;
+}
+
+.navigation-links div:hover {
+  color: rgb(219, 96, 2);
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgba(251, 155, 82, 0.193);
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.list-container h5 {
+  margin: 0.8rem 0;
+  letter-spacing: 0.3px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list > div {
+  border-top: 1px solid rgba(219, 219, 219, 0.673);
+  padding: 0.5rem 0;
+}
+
+.task-list input {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.task-list input:checked {
+  accent-color: rgb(89, 130, 192);
+  border: none;
+  outline: none;
+}
+
+.list-item-container {
+  display: flex;
+  align-items: center;
+
+  gap: 0.2rem;
+}
+
+.list-item {
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  color: rgb(68, 68, 68);
+}
+
+.due-time {
+  color: rgb(0, 180, 0);
+  font-size: 0.7rem;
+  padding: 0 1.4rem;
+}
