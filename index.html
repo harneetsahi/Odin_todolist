@@ -14,7 +14,7 @@
     <div class="main">
       <aside class="sidebar">
         <section class="navigation-links">
-          <div class="add">Add task</div>
+          <div class="add" id="add-task">Add task</div>
           <div class="search">Search</div>
         </section>
         <section class="project-links"></section>
@@ -36,7 +36,6 @@
                 <input type="radio" name="item" id="" />
                 <label class="list-item">yoga</label>
               </div>
-
               <span class="due-time">Date, 10:00 AM</span>
             </div>
           </field>
@@ -57,11 +56,31 @@
                 <input type="radio" name="item" id="" />
                 <label class="list-item">add via js</label>
               </div>
-
               <span class="due-time">Date, 10:00 AM</span>
             </div>
           </field>
         </section>
+      </div>
+    </div>
+
+    <div>
+      <!-- overlay when opening modal -->
+      <div class="overlay">
+      </div> 
+      <!-- open modal when adding a new task -->
+      <div class="open-modal" id="modal">
+        <div class="task-details">
+          <input class="task-name" placeholder="Task name"></input>
+          <div class="task-btn-container">
+          <button class="due-date task-btn">Due date</button>
+          <button class="existing-project task-btn">Existing project</button>
+          <button class="new-project task-btn">New project</button>
+        </div>
+        <!-- might need to change the button to some other attr for date -->
+        </div>
+        <div class="task-add-container">
+          <button class="add-task-btn">Add task</button>
+        </div>
       </div>
     </div>
 
