@@ -19,3 +19,23 @@ function openModal() {
   openModalBtn.style.display = "block";
   overlayBtn.style.display = "block";
 }
+
+/* event listener for opening modal */
+addNew.addEventListener("click", () => {
+  openModal();
+});
+
+/* event listener for closing modal */
+window.addEventListener("click", (e) => {
+  const target = e.target;
+
+  // if clicked inside open modal div, do nothing
+  if (target.closest(".open-modal")) {
+    return;
+  }
+
+  // if clicked on anything other than 'add task' div, close modal
+  if (target.id != "add-task") {
+    closeModal();
+  }
+});
