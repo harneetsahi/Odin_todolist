@@ -39,3 +39,30 @@ window.addEventListener("click", (e) => {
     closeModal();
   }
 });
+
+/* function for creating list */
+function createListItem() {
+  const taskInput = taskName.value;
+
+  const taskListContent = document.createElement("div");
+  taskListContent.classList.add("task-list-content-js");
+
+  const listItemContainer = document.createElement("div");
+  listItemContainer.classList.add("list-item-container");
+
+  const inputListName = document.createElement("input");
+  inputListName.type = "radio";
+
+  const labelListName = document.createElement("label");
+  labelListName.classList.add("list-item");
+  labelListName.textContent = taskInput;
+
+  const dueTimeSpan = document.createElement("span");
+  dueTimeSpan.classList.add("due-time");
+
+  taskListSection.appendChild(taskListContent);
+  taskListContent.appendChild(listItemContainer);
+  taskListContent.appendChild(dueTimeSpan);
+  listItemContainer.appendChild(inputListName);
+  listItemContainer.appendChild(labelListName);
+}
