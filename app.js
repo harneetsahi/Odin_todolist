@@ -66,3 +66,10 @@ function createListItem() {
   listItemContainer.appendChild(inputListName);
   listItemContainer.appendChild(labelListName);
 }
+
+/* event listener for creating a list item */
+addTaskBtn.addEventListener("click", () => {
+  createListItem();
+  closeModal();
+  taskName.value = "";
+});
