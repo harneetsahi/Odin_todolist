@@ -73,3 +73,14 @@ addTaskBtn.addEventListener("click", () => {
   closeModal();
   taskName.value = "";
 });
+
+// constructor function for todo list objects
+
+class ToDoListItems {
+  constructor(listName, dueTime) {
+    this.listName = listName;
+    this.dueTime = dueTime;
+  }
+
+  // how to dynamically get dueTime
+}
