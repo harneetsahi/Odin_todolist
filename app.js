@@ -44,6 +44,9 @@ window.addEventListener("click", (e) => {
 function createListItem() {
   const taskInput = taskName.value;
 
+  // through contructor
+  const toDoItem = new ToDoListItems(taskInput, "Today, 4 PM");
+  
   const taskListContent = document.createElement("div");
   taskListContent.classList.add("task-list-content-js");
 
@@ -56,9 +59,13 @@ function createListItem() {
   const labelListName = document.createElement("label");
   labelListName.classList.add("list-item");
   labelListName.textContent = taskInput;
+  labelListName.textContent = toDoItem.listName;
+
 
   const dueTimeSpan = document.createElement("span");
   dueTimeSpan.classList.add("due-time");
+  dueTimeSpan.textContent = toDoItem.dueTime; // have to get this through some function
+
 
   taskListSection.appendChild(taskListContent);
   taskListContent.appendChild(listItemContainer);
